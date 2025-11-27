@@ -1,0 +1,25 @@
+# --- Específico do seu Projeto ---
+# O servidor_io.py gera este arquivo de log durante a execução.
+# Não queremos versionar logs de execução local.
+log.txt
+
+# --- Python Bytecode ---
+# O Python gera esses arquivos compilados automaticamente para rodar mais rápido.
+# Eles não devem ser versionados pois são gerados pela máquina local.
+__pycache__/
+*.pyc
+
+# --- Ambientes Virtuais ---
+# Se você criar um ambiente virtual (venv) para instalar dependências,
+# ele não deve ir para o Git.
+venv/
+env/
+.env
+
+# --- IDE (VS Code) ---
+# Configurações locais do seu editor (como cor do tema ou configurações de debug)
+.vscode/
+
+# --- Sistema Operacional (Windows) ---
+Thumbs.db
+Desktop.ini
