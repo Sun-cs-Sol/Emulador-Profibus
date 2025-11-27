@@ -2,8 +2,9 @@ import unittest
 import threading
 import time
 
-from servidor_io import DispositivoIO
-from cliente_controlador import Controlador
+from src.servidor_io import DispositivoIO
+from src.cliente_controlador import Controlador
+
 
 class TestCoreNetwork(unittest.TestCase):
     def test_ler_status_integra(self):

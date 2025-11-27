@@ -1,6 +1,6 @@
 # Simulador de I/O Profibus/Profinet 
 
-Este projeto é um simulador de comunicação industrial Cliente/Servidor em Python, baseado no Tema 4 da disciplina
+Este projeto é um simulador de comunicação industrial Cliente/Servidor em Python, baseado no Tema 4 da disciplina.
 
 ## Escopo - Semana 1
 
@@ -13,16 +13,30 @@ O objetivo é criar os esqueletos de um servidor (Dispositivo I/O) e um cliente 
 
 ## Como Executar 
 
-1.  Certifique-se de ter o Python 3.10+ instalado.
-2.  Crie e ative um ambiente virtual:
+1. Certifique-se de ter o Python 3.10+ instalado.
+2. Crie e ative um ambiente virtual:
     ```bash
     python -m venv venv
     source venv/bin/activate
     ```
-3.  **Para rodar:**
+    No Windows, use:
+    ```bash
+    venv\Scripts\activate
+    ```
+3. **Para rodar:**
     * Execute o servidor em um terminal: `python servidor_io.py`
     * Execute o cliente em outro terminal: `python cliente_controlador.py`
-  
+
+## Como Rodar os Testes
+
+1. Certifique-se de que o ambiente virtual está ativado.
+2. Execute o seguinte comando no terminal para rodar os testes:
+    ```bash
+    python -m unittest discover -s tests
+    ```
+    Isso irá procurar por todos os arquivos de teste na pasta [tests](http://_vscodecontentref_/0) e executá-los automaticamente.
+
+3. Verifique os resultados no terminal. Se todos os testes passarem, você verá uma mensagem indicando sucesso.
 
 ## Equipe 4 
 
